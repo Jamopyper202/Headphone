@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.2-web/css/all.css" />
+    <title>Document</title>
+    <style>
+         *{
+        margin :0;
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body{
+        background: radial-gradient(circle, #E5FAFF 6%, #B0CED8 50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+       height: 100vh;
+        padding: 22px;
+    }
+    .container{
+        width: 800px;
+        margin: 0 auto;
+    }
+    header .container nav{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    header .container nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+       
+    }
+    header .container nav ul li{
+        padding: 0 10px;
+        position: relative;
+
+    }
+    header .container nav ul li a{
+        color: #183B61;
+        font-size: 19px;
+    }
+    
+    .logo i{
+        color: #013C5A;
+    }
+    .social-icon i{
+        color: #104382;
+    }
+    section{
+        padding: 60px 0;
+    }
+    #home .container .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
+    #home .container .row .col{
+        flex-basis: 0 0 50%;
+        max-width: 50%;
+    }
+    .col h1{
+        font-size: 3rem;
+        color: #184366;
+        font-weight: 200;
+    }
+    header .container nav ul li .active::after{
+        content: "";
+        position: absolute;
+        left: 30%;
+        bottom: -3px;
+        width: 40%;
+        height:  3px;
+        background: #14446C;
+    }
+    .col p{
+        margin: 20px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #14446C;
+
+    }
+    .col img{
+        object-fit: cover;
+    }
+    button{
+        padding: 8px 30px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    .btn .buy {
+        background: #104382;
+        color: #ffffff;
+        outline: none;
+        border: none;
+    }
+    .btn .explore {
+        border:1.5px solid #104382;
+        color: #104382;
+        font-weight: 600;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-headphones fa-3x"></i>
+                </div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Experience Pure Sound: Meet Our Headphones 
+                    </h1>
+                    <p>Built to Last, Enjoyed for Lifetime,Transfar for Listening Experience Today.</p>
+                    <div class="btn">
+                        <button type="button"
+                        class="buy">Buy Now</button>
+                        <button type="button" class="explore">Explore</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/Screenshot_20240731-222713-removebg-preview.png" alt="Headphones" width="300px">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
